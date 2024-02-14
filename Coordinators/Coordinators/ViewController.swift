@@ -9,6 +9,8 @@ import UIKit
 
 class ViewController: UIViewController, Storyboarded {
     
+    @IBOutlet weak var product: UISegmentedControl!
+    
     weak var coordinator: MainCoordinator?
 
     override func viewDidLoad() {
@@ -21,7 +23,7 @@ class ViewController: UIViewController, Storyboarded {
     }
     
     @IBAction func createAccountTapped(_ sender: Any) {
-        coordinator?.createAccount()
+        coordinator?.createAccount(to: product.selectedSegmentIndex)
     }
 }
 

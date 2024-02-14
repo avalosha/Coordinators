@@ -17,9 +17,13 @@ class BuyViewController: UIViewController, Storyboarded {
         // Do any additional setup after loading the view.
     }
     
-    override func viewDidDisappear(_ animated: Bool) {
-        super.viewDidDisappear(animated)
-        coordinator?.didFinishBuying()
+    deinit {
+        print("deinit BuyVC")
     }
+    
+//    override func viewDidDisappear(_ animated: Bool) {
+//        super.viewDidDisappear(animated)
+//        coordinator?.didFinishBuying()
+//    }
 
 }
