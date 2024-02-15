@@ -20,9 +20,14 @@
 		6A5407692B7D3A9800B7A279 /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5407682B7D3A9800B7A279 /* Storyboarded.swift */; };
 		6A54076B2B7D3BF500B7A279 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A54076A2B7D3BF500B7A279 /* MainCoordinator.swift */; };
 		6A54076D2B7D3FE800B7A279 /* BuyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A54076C2B7D3FE800B7A279 /* BuyViewController.swift */; };
-		6A54076F2B7D3FFB00B7A279 /* CreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A54076E2B7D3FFB00B7A279 /* CreateViewController.swift */; };
 		6A5407722B7D494B00B7A279 /* BuyCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5407712B7D494B00B7A279 /* BuyCoordinator.swift */; };
 		6A5407742B7D5DC800B7A279 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5407732B7D5DC800B7A279 /* MainTabBarController.swift */; };
+		6A54077A2B7D8D4D00B7A279 /* Buy.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A5407792B7D8D4D00B7A279 /* Buy.storyboard */; };
+		6A54077C2B7D8DAA00B7A279 /* Account.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A54077B2B7D8DAA00B7A279 /* Account.storyboard */; };
+		6A54077E2B7D8DFB00B7A279 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A54077D2B7D8DFB00B7A279 /* CreateAccountViewController.swift */; };
+		6A5407822B7D8FA500B7A279 /* Secondary.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A5407812B7D8FA500B7A279 /* Secondary.storyboard */; };
+		6A5407842B7D8FBC00B7A279 /* SecondaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5407832B7D8FBC00B7A279 /* SecondaryViewController.swift */; };
+		6A5407862B7D906500B7A279 /* SecondaryCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5407852B7D906500B7A279 /* SecondaryCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,9 +65,14 @@
 		6A5407682B7D3A9800B7A279 /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
 		6A54076A2B7D3BF500B7A279 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		6A54076C2B7D3FE800B7A279 /* BuyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyViewController.swift; sourceTree = "<group>"; };
-		6A54076E2B7D3FFB00B7A279 /* CreateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateViewController.swift; sourceTree = "<group>"; };
 		6A5407712B7D494B00B7A279 /* BuyCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyCoordinator.swift; sourceTree = "<group>"; };
 		6A5407732B7D5DC800B7A279 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		6A5407792B7D8D4D00B7A279 /* Buy.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Buy.storyboard; sourceTree = "<group>"; };
+		6A54077B2B7D8DAA00B7A279 /* Account.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Account.storyboard; sourceTree = "<group>"; };
+		6A54077D2B7D8DFB00B7A279 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
+		6A5407812B7D8FA500B7A279 /* Secondary.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Secondary.storyboard; sourceTree = "<group>"; };
+		6A5407832B7D8FBC00B7A279 /* SecondaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryViewController.swift; sourceTree = "<group>"; };
+		6A5407852B7D906500B7A279 /* SecondaryCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,19 +123,13 @@
 		6A5407352B7D38F000B7A279 /* Coordinators */ = {
 			isa = PBXGroup;
 			children = (
+				6A5407772B7D8AF700B7A279 /* Coordinator */,
 				6A5407702B7D47D700B7A279 /* Moduls */,
 				6A5407362B7D38F000B7A279 /* AppDelegate.swift */,
 				6A5407382B7D38F000B7A279 /* SceneDelegate.swift */,
-				6A54073A2B7D38F000B7A279 /* ViewController.swift */,
-				6A54073C2B7D38F000B7A279 /* Main.storyboard */,
 				6A54073F2B7D38F200B7A279 /* Assets.xcassets */,
 				6A5407412B7D38F200B7A279 /* LaunchScreen.storyboard */,
 				6A5407442B7D38F200B7A279 /* Info.plist */,
-				6A5407662B7D39C800B7A279 /* Coordinator.swift */,
-				6A5407682B7D3A9800B7A279 /* Storyboarded.swift */,
-				6A54076A2B7D3BF500B7A279 /* MainCoordinator.swift */,
-				6A5407712B7D494B00B7A279 /* BuyCoordinator.swift */,
-				6A5407732B7D5DC800B7A279 /* MainTabBarController.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -150,10 +154,69 @@
 		6A5407702B7D47D700B7A279 /* Moduls */ = {
 			isa = PBXGroup;
 			children = (
-				6A54076C2B7D3FE800B7A279 /* BuyViewController.swift */,
-				6A54076E2B7D3FFB00B7A279 /* CreateViewController.swift */,
+				6A5407802B7D8F7600B7A279 /* Secondary */,
+				6A54077F2B7D8ECA00B7A279 /* Main */,
+				6A5407782B7D8B1900B7A279 /* TabBar */,
+				6A5407762B7D898600B7A279 /* CreateAccount */,
+				6A5407752B7D895B00B7A279 /* Buy */,
 			);
 			path = Moduls;
+			sourceTree = "<group>";
+		};
+		6A5407752B7D895B00B7A279 /* Buy */ = {
+			isa = PBXGroup;
+			children = (
+				6A5407712B7D494B00B7A279 /* BuyCoordinator.swift */,
+				6A54076C2B7D3FE800B7A279 /* BuyViewController.swift */,
+				6A5407792B7D8D4D00B7A279 /* Buy.storyboard */,
+			);
+			path = Buy;
+			sourceTree = "<group>";
+		};
+		6A5407762B7D898600B7A279 /* CreateAccount */ = {
+			isa = PBXGroup;
+			children = (
+				6A54077B2B7D8DAA00B7A279 /* Account.storyboard */,
+				6A54077D2B7D8DFB00B7A279 /* CreateAccountViewController.swift */,
+			);
+			path = CreateAccount;
+			sourceTree = "<group>";
+		};
+		6A5407772B7D8AF700B7A279 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				6A5407662B7D39C800B7A279 /* Coordinator.swift */,
+				6A54076A2B7D3BF500B7A279 /* MainCoordinator.swift */,
+				6A5407682B7D3A9800B7A279 /* Storyboarded.swift */,
+				6A5407852B7D906500B7A279 /* SecondaryCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		6A5407782B7D8B1900B7A279 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				6A5407732B7D5DC800B7A279 /* MainTabBarController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		6A54077F2B7D8ECA00B7A279 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				6A54073A2B7D38F000B7A279 /* ViewController.swift */,
+				6A54073C2B7D38F000B7A279 /* Main.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		6A5407802B7D8F7600B7A279 /* Secondary */ = {
+			isa = PBXGroup;
+			children = (
+				6A5407812B7D8FA500B7A279 /* Secondary.storyboard */,
+				6A5407832B7D8FBC00B7A279 /* SecondaryViewController.swift */,
+			);
+			path = Secondary;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,6 +324,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				6A5407432B7D38F200B7A279 /* LaunchScreen.storyboard in Resources */,
+				6A5407822B7D8FA500B7A279 /* Secondary.storyboard in Resources */,
+				6A54077A2B7D8D4D00B7A279 /* Buy.storyboard in Resources */,
+				6A54077C2B7D8DAA00B7A279 /* Account.storyboard in Resources */,
 				6A5407402B7D38F200B7A279 /* Assets.xcassets in Resources */,
 				6A54073E2B7D38F000B7A279 /* Main.storyboard in Resources */,
 			);
@@ -288,13 +354,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				6A5407722B7D494B00B7A279 /* BuyCoordinator.swift in Sources */,
-				6A54076F2B7D3FFB00B7A279 /* CreateViewController.swift in Sources */,
 				6A5407742B7D5DC800B7A279 /* MainTabBarController.swift in Sources */,
+				6A54077E2B7D8DFB00B7A279 /* CreateAccountViewController.swift in Sources */,
 				6A5407672B7D39C800B7A279 /* Coordinator.swift in Sources */,
 				6A54076B2B7D3BF500B7A279 /* MainCoordinator.swift in Sources */,
 				6A54073B2B7D38F000B7A279 /* ViewController.swift in Sources */,
 				6A5407692B7D3A9800B7A279 /* Storyboarded.swift in Sources */,
+				6A5407842B7D8FBC00B7A279 /* SecondaryViewController.swift in Sources */,
 				6A5407372B7D38F000B7A279 /* AppDelegate.swift in Sources */,
+				6A5407862B7D906500B7A279 /* SecondaryCoordinator.swift in Sources */,
 				6A54076D2B7D3FE800B7A279 /* BuyViewController.swift in Sources */,
 				6A5407392B7D38F000B7A279 /* SceneDelegate.swift in Sources */,
 			);

@@ -1,5 +1,5 @@
 //
-//  CreateViewController.swift
+//  CreateAccountViewController.swift
 //  Coordinators
 //
 //  Created by Sferea-Lider on 14/02/24.
@@ -7,8 +7,8 @@
 
 import UIKit
 
-class CreateViewController: UIViewController, Storyboarded {
-
+class CreateAccountViewController: UIViewController, Storyboarded {
+    
     weak var coordinator: MainCoordinator?
     var selectedProduct = 0
     
@@ -19,7 +19,7 @@ class CreateViewController: UIViewController, Storyboarded {
     }
     
     deinit {
-        print("deinit CreateVC")
+        print("deinit CreateAccountVC")
     }
 
 }
