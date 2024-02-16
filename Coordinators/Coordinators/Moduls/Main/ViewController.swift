@@ -12,10 +12,26 @@ class ViewController: UIViewController, Storyboarded {
     @IBOutlet weak var product: UISegmentedControl!
     
     weak var coordinator: MainCoordinator?
+    
+    var tableView = UITableView()
+    var pictures = [String]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        let items = ["nssl01","nssl01","nssl01","nssl01","nssl01","nssl01","nssl01","nssl01","nssl01","nssl01"]
+        for item in items {
+            if item.hasPrefix("nssl") {
+                pictures.append(item)
+            }
+        }
+        
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
+        tableView.reloadData()
+        
+        navigationController?.navigationBar.prefersLargeTitles = true
+        
+        title = "Main"
     }
 
     @IBAction func buyTapped(_ sender: Any) {
@@ -27,3 +43,17 @@ class ViewController: UIViewController, Storyboarded {
     }
 }
 
+extension ViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return pictures.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        cell.textLabel?.text = pictures[indexPath.row]
+        cell.accessoryType = .disclosureIndicator
+        
+        return cell
+    }
+    
+}

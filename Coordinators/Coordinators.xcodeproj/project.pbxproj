@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A33AD712B7FDBEC0053FC4E /* ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A33AD702B7FDBEC0053FC4E /* ExampleTests.swift */; };
+		6A33AD732B7FFF390053FC4E /* DetailExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A33AD722B7FFF390053FC4E /* DetailExampleTests.swift */; };
 		6A5407372B7D38F000B7A279 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5407362B7D38F000B7A279 /* AppDelegate.swift */; };
 		6A5407392B7D38F000B7A279 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5407382B7D38F000B7A279 /* SceneDelegate.swift */; };
 		6A54073B2B7D38F000B7A279 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A54073A2B7D38F000B7A279 /* ViewController.swift */; };
@@ -48,6 +50,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6A33AD702B7FDBEC0053FC4E /* ExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleTests.swift; sourceTree = "<group>"; };
+		6A33AD722B7FFF390053FC4E /* DetailExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailExampleTests.swift; sourceTree = "<group>"; };
 		6A5407332B7D38F000B7A279 /* Coordinators.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Coordinators.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A5407362B7D38F000B7A279 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6A5407382B7D38F000B7A279 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -138,6 +142,8 @@
 			isa = PBXGroup;
 			children = (
 				6A54074D2B7D38F200B7A279 /* CoordinatorsTests.swift */,
+				6A33AD702B7FDBEC0053FC4E /* ExampleTests.swift */,
+				6A33AD722B7FFF390053FC4E /* DetailExampleTests.swift */,
 			);
 			path = CoordinatorsTests;
 			sourceTree = "<group>";
@@ -372,6 +378,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A33AD732B7FFF390053FC4E /* DetailExampleTests.swift in Sources */,
+				6A33AD712B7FDBEC0053FC4E /* ExampleTests.swift in Sources */,
 				6A54074E2B7D38F200B7A279 /* CoordinatorsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -472,7 +480,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -529,7 +537,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;

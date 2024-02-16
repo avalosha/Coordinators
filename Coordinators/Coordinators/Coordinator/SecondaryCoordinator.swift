@@ -39,6 +39,6 @@ class SecondaryCoordinator: NSObject, Coordinator, UINavigationControllerDelegat
         
         if navigationController.viewControllers.contains(fromViewController) { return }
         
-        // Delete VC
+        // Delete VC's
     }
 }
