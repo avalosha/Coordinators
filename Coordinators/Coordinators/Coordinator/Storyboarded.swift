@@ -13,6 +13,7 @@ enum Storyboards: String {
     case secondary = "Secondary"
     case buy = "Buy"
     case account = "Account"
+    case detail = "Detail"
 }
 
 protocol Storyboarded {

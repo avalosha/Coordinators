@@ -15,7 +15,7 @@ class CreateAccountViewController: UIViewController, Storyboarded {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        print("SelectedProduct: ",selectedProduct)
+        title = "Create Account \(selectedProduct)"
     }
     
     deinit {

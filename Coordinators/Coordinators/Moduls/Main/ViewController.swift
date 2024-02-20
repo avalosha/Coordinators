@@ -10,27 +10,24 @@ import UIKit
 class ViewController: UIViewController, Storyboarded {
     
     @IBOutlet weak var product: UISegmentedControl!
+    @IBOutlet weak var tableView: UITableView!
     
     weak var coordinator: MainCoordinator?
     
-    var tableView = UITableView()
     var pictures = [String]()
+    var pictureSelectAction: ((String) -> Void)?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let items = ["nssl01","nssl01","nssl01","nssl01","nssl01","nssl01","nssl01","nssl01","nssl01","nssl01"]
-        for item in items {
-            if item.hasPrefix("nssl") {
-                pictures.append(item)
-            }
-        }
+        let items = ["kof","street_fighter","xmen_capcom"]
+        pictures.append(contentsOf: items)
         
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
+        tableView.delegate = self
+        tableView.dataSource = self
         tableView.reloadData()
         
         navigationController?.navigationBar.prefersLargeTitles = true
-        
         title = "Main"
     }
 
@@ -49,11 +46,18 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        cell.textLabel?.text = pictures[indexPath.row]
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "ExampleCell", for: indexPath) as? ExampleCell else { fatalError("xib doesn't exist") }
+        
+        cell.titleLbl.text = pictures[indexPath.row]
         cell.accessoryType = .disclosureIndicator
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        let item = pictures[indexPath.row]
+//        coordinator?.showDetail(with: item)
+        pictureSelectAction?(pictures[indexPath.row])
     }
     
 }

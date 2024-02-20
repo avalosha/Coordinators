@@ -22,6 +22,11 @@ class MainCoordinator: NSObject, Coordinator, UINavigationControllerDelegate {
         let vc = ViewController.instantiate(.main)
         vc.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 0)
         vc.coordinator = self
+        
+        vc.pictureSelectAction = { [weak self] in
+            self?.showDetail(for: $0)
+        }
+        
         navigationController.pushViewController(vc, animated: false)
     }
     
@@ -35,6 +40,13 @@ class MainCoordinator: NSObject, Coordinator, UINavigationControllerDelegate {
     func createAccount(to productType: Int) {
         let vc = CreateAccountViewController.instantiate(.account)
         vc.selectedProduct = productType
+        vc.coordinator = self
+        navigationController.pushViewController(vc, animated: true)
+    }
+    
+    func showDetail(for filename: String) {
+        let vc = DetailViewController.instantiate(.detail)
+        vc.selectedImage = filename
         vc.coordinator = self
         navigationController.pushViewController(vc, animated: true)
     }
